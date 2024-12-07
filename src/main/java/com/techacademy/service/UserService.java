@@ -33,7 +33,7 @@ public class UserService {
         return userRepository.save(user);
     }
 
-    //*Userの削除を行う*/
+    /**Userの削除を行う*/
     @Transactional
     public void deleteUser(Set<Integer> idck) {
         for(Integer id:idck) {
